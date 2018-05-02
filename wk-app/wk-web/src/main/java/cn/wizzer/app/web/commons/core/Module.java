@@ -19,7 +19,7 @@ import org.nutz.plugins.view.pdf.PdfViewMaker;
 @Encoding(input = "UTF-8", output = "UTF-8")
 @Views({BeetlViewMaker.class, PdfViewMaker.class})
 @SetupBy(value = Setup.class)
-@ChainBy(args = "config/chain/nutzwk-mvc-chain.json")
+@ChainBy(args = "config/chain/nutzwk-mvc-chain.js")
 @SessionBy(ShiroSessionProvider.class)
 public class Module {
 }

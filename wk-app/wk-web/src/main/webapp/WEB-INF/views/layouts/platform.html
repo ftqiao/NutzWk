@@ -139,8 +139,7 @@
                     <% } %>
                     <span>
                         <%if(lang=="zh_CN"){%>${firstMenu.name}<%}else{%>${firstMenu.aliasName}<%}%></span>
-                    <b class="caret"></b
-                            >
+                    <b class="caret"></b>
                 </a>
                 <%}else{%>
                     <a href="<% if(!isEmpty(firstMenu.href)){ %><%if(@string.startWith(firstMenu.href,'/')){%>${base}${firstMenu.href!}<%}else{%>${firstMenu.href!}<%}%> <% }else{ %>javascript:;<% } %>" <%if(@string.startWith(firstMenu.target,'_')){%>target="${firstMenu.target!}"<%}else{%>${firstMenu.target!}<%}%>>
